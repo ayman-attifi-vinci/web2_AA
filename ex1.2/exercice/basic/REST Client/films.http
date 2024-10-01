@@ -1,0 +1,22 @@
+### Read all films
+@baseUrl = http://localhost:3000
+GET {{baseUrl}}/films
+
+### Read a single drink
+GET {{baseUrl}}/films/3
+
+### Read all drinks longer or equal to 145 min
+GET {{baseUrl}}/films?minimum-duration=145
+
+### Create a film
+POST {{baseUrl}}/films
+Content-Type: application/json
+
+{
+    "title": "Pulp Fiction",
+    "director": "Quentin Tarantino",
+    "duration": 154,
+    "budget": 8500000,
+    "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+    "imageUrl": "https://example.com/pulpfiction.jpg"
+}
