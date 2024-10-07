@@ -20,3 +20,14 @@ Content-Type: application/json
     "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
     "imageUrl": "https://example.com/pulpfiction.jpg"
 }
+
+### Delete a drink
+DELETE {{baseUrl}}/films/2
+
+### Update the film identified by 5
+PATCH {{baseUrl}}/films/3
+Content-Type: application/json
+
+{
+    "title":"James Bond"
+}
